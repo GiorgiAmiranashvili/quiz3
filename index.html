@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+ 
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      აკრიფე ისე ჩქარა, როგორც შეგიძლია
+    </div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">სიტყვა წუთში</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">ასო წუთში</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">შეცდომები</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">დრო</div>
+        <div class="curr_time">30s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% სიზუსტე</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+ 
+    <div class="quote">
+      დასაწყებათ დააჭირეთ ქვემოთ თეთრ არეას.
+    </div>
+    <textarea class="input_area"
+      oninput="processCurrentText()"
+      onfocus="startGame()">
+    </textarea>
+    <button class="restart_btn"
+      onclick="resetValues()">
+      ახლიდან ცდა
+    </button>
+  </div>
+ 
+  <script src="game.js">
+  </script>
+</body>
+</html>
